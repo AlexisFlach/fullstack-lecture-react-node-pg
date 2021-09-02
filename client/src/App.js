@@ -1,11 +1,16 @@
+import {Layout} from './layout/Layout'
+import PageHeading from './layout/PageHeading'
+import Form from './components/Form'
 import Color from './Color'
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <Layout>
+      <PageHeading text="Add a Color:" />
+      <Form />
+      <PageHeading text="My Colors:" />
      <Color />
-    </div>
+    </Layout>
   );
 }
 
